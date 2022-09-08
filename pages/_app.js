@@ -1,3 +1,4 @@
+/* eslint no-use-before-define: 0 */
 import { ThemeProvider } from '@mui/material'
 import '../styles/globals.css'
 import { theme } from '../theme'

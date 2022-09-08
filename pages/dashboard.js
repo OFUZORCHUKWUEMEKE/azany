@@ -8,6 +8,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Image from 'next/image';
 const Dashboard = () => {
   return (
     <>
@@ -63,7 +64,7 @@ const Dashboard = () => {
                 <div className='w-4/5 mx-auto p-2'>
                   <Grid container spacing={3} justifyContent="space-between">
                     <Grid item xs={12} md={7}>
-                      <img src="/images/rename.png" className="object-cover" />
+                      <Image alt="" src="/images/rename.png" className="object-cover" />
                       <div className="py-4 mt-2 w-full bg-white shadow-md">
                         <div className="p-4 w-[90%] mx-auto">
                           <div className='w-full flex justify-between items-center'>
@@ -72,7 +73,7 @@ const Dashboard = () => {
                           </div>
                           {Transactions && (
                             Transactions.slice(0, 4).map((transaction) => (
-                              <div className="px-2 py-4">
+                              <div key={transaction.amount} className="px-2 py-4">
                                 <div className='flex justify-between items-center text-center'>
                                   <div>
                                     <p>Withdrawal</p>
@@ -111,9 +112,9 @@ const Dashboard = () => {
                             </div>
                             {downlines && (
                               downlines.map((downline) => (
-                                <div className='flex py-4 mt-3 w-full mx-auto items-center justify-between'>
+                                <div key={downline.name} className='flex py-4 mt-3 w-full mx-auto items-center justify-between'>
                                   <div>
-                                    <img src={downline.images} />
+                                    <Image alt="" src={downline.images} />
                                   </div>
                                   <div>
                                     <h2>{downline.name}</h2>

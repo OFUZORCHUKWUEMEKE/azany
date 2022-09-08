@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Resetpassword = () => {
@@ -6,7 +7,7 @@ const Resetpassword = () => {
             <div className="max-w-full min-h-screen">
                 <div className="flex items-center">
                     <div className="flex-1">
-                        <img src="/images/login2.png" className='max-h-screen object-cover w-full' />
+                        <Image alt="" src="/images/login2.png" className='max-h-screen object-cover w-full' />
                     </div>
                     <div className="flex-1 flex flex-col justify-center w-full items-center">
                         <div>

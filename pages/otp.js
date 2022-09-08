@@ -1,5 +1,6 @@
 import React from 'react'
 import { MuiOtpInput } from 'mui-one-time-password-input'
+import Image from 'next/image'
 
 
 
@@ -14,7 +15,7 @@ const Otp = () => {
       <div className="max-w-full min-h-screen">
         <div className="flex">
           <div className="flex-1 hidden md:block">
-            <img src="/images/login2.png" className='h-screen object-cover w-full' />
+            <Image alt="" src="/images/login2.png" className='h-screen object-cover w-full' />
           </div>
           <div className="flex-1 flex h-screen flex-col justify-center  items-center">
             <div className="w-[75%] mx-auto">

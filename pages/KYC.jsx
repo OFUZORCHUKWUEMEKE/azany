@@ -7,6 +7,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import DownloadIcon from '@mui/icons-material/Download';
 import FileUploadIcon from '@mui/icons-material/FileUpload';
 import KycModal from '../components/KycModal';
+import Image from 'next/image';
 const KYC = () => {
     const [age, setAge] = React.useState('');
 
@@ -89,7 +90,7 @@ const KYC = () => {
                             {upload && images ? (
                                 <>
                                     <div className='p-2 border-2 border-[#E51B48] border-dotted w-3/5'>
-                                        <img src={URL.createObjectURL(images)} className="h-44 w-full" />
+                                        <Image alt="" src={URL.createObjectURL(images)} className="h-44 w-full" />
                                     </div>
                                     {/* Replace Button */}
                                     {/* <div>

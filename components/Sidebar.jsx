@@ -12,7 +12,7 @@ const Sidebar = () => {
             <div className='min-h-screen flex justify-center items-center w-4/5 mx-auto'>
                <div className='w-full flex flex-col justify-center items-center'>
                   <div className="space-y-2 w-full flex flex-col items-center justify-center">
-                     <img src="/images/dashboard.png" className='object-cover' />
+                     <Image alt="" src="/images/dashboard.png" className='object-cover' />
                      <h2 className='font-bold text-center'>Damola Spencer</h2>
                   </div>
                   <div className='space-y-2 p-2 w-full'>

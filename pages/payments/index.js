@@ -60,7 +60,7 @@ const Payment = () => {
                             </div>
                             {Transactions && (
                                 Transactions.map((transaction) => (
-                                    <div className="px-2 py-4">
+                                    <div key={transaction.amount} className="px-2 py-4">
                                         <div className='flex justify-between items-center text-center'>
                                             <div>
                                                 <p className='font-semibold'>Withdrawal</p>

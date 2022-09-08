@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,7 +8,7 @@ const Forgotpassword = () => {
             <div className="max-w-full min-h-screen">
                 <div className="flex">
                     <div className="flex-1 hidden md:block">
-                        <img src="/images/login2.png" className='h-screen object-cover w-full' />
+                        <Image alt="" src="/images/login2.png" className='h-screen object-cover w-full' />
                     </div>
                     <div className="flex-1 min-h-screen flex flex-col justify-center md:justify-start mt-3 py-4  items-center">
                         <div className="w-4/5 md:w-3/5 mx-auto">

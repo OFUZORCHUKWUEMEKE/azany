@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Register = () => {
     return (
@@ -7,7 +8,7 @@ const Register = () => {
             <div className="max-w-full min-h-screen">
                 <div className="flex items-center">
                     <div className="flex-1 hidden md:block">
-                        <img src="/images/login.png" className='h-screen object-cover w-full' />
+                        <Image alt="" src="/images/login.png" className='h-screen object-cover w-full' />
                     </div>
                     <div className="flex-1 flex flex-col h-screen justify-center w-full items-center">
                         <div>

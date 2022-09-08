@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Image from 'next/image';
 
 
 
@@ -12,7 +13,7 @@ const HomePagePro = () => {
     <>
       <div className='bg-[#0081FE] min-h-[40vh] p-12 justify-center flex items-center'>
         <div className='relative'>
-          <img src="/images/blob.png" className='w-[70%] mx-auto p-6' />
+          <Image alt="" src="/images/blob.png" className='w-[70%] mx-auto p-6' />
           <div className='absolute top-[35%] left-[20%] spacing-y-5'>
             <h2 className='text-2xl font-mono font-bold w-4/5 py-3'>Send us a message for more information</h2>
             <p className='py-2'>Sign up and enjoy all the advantages we offer you.</p>

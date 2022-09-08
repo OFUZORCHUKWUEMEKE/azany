@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,7 +8,7 @@ const Login = () => {
             <div className="max-w-full min-h-screen">
                 <div className="md:flex block items-center">
                     <div className="md:flex-1 hidden md:block">
-                        <img src="/images/login2.png" className='h-screen object-cover w-full'/>
+                        <Image alt="" src="/images/login2.png" className='h-screen object-cover w-full'/>
                     </div>
                     <div className="md:flex-1 h-screen  flex flex-col justify-center w-4/5 mx-auto items-center">
                         <div>
@@ -31,7 +32,7 @@ const Login = () => {
                                 <button className="text-white w-full rounded-xl bg-[#E51B48] py-2 px-4">Continue</button>
                             </div>
                             <div className="mt-3 py-4">
-                                <p className='text-center'>Don't have an account ? <Link href="/register"><span className="text-[#E51B48] cursor-pointer">Sign Up</span></Link></p>
+                                <p className='text-center'>Dont have an account ? <Link href="/register"><span className="text-[#E51B48] cursor-pointer">Sign Up</span></Link></p>
                             </div>
                         </div>
                     </div>

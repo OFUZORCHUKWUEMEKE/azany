@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 const Works = () => {
@@ -8,7 +9,7 @@ const Works = () => {
                     <h2 className='text-center text-2xl font-bold'>How It Works</h2>
                     <div className="flex flex-col md:flex-row items-center justify-center py-4 mt-4">
                         <div className='space-y-4 flex flex-col justify-center items-center text-center w-4/5 flex-1'>
-                            <img src="/images/icons (1).png"/>
+                            <Image alt="" src="/images/icons (1).png"/>
                             <h2 className="font-bold text-xl">Copy Referral Code</h2>
                             <div>
                                 <p>Send your referral code to your</p>
@@ -17,7 +18,7 @@ const Works = () => {
                             
                         </div>
                         <div className='space-y-4 flex flex-col justify-center items-center text-center w-4/5 flex-1'>
-                            <img src="/images/icons (2).png"/>
+                            <Image alt="" src="/images/icons (2).png"/>
                             <h2 className="font-bold text-xl">Registration</h2>
                             <div>
                                 <p>They get registered on the </p>
@@ -26,7 +27,7 @@ const Works = () => {
                             
                         </div>
                         <div className='space-y-4 flex flex-col justify-center items-center text-center w-4/5 flex-1'>
-                            <img src="/images/icons (3).png"/>
+                            <Image alt="" src="/images/icons (3).png"/>
                             <h2 className="font-bold text-xl">Recieve Cash</h2>
                             <div>
                                 <p>You and your friends will</p>

@@ -4,6 +4,7 @@ import BasicTable from '../../components/DownlineTable'
 import Layout from '../../components/Layout'
 import FilterListIcon from '@mui/icons-material/FilterList';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Downline = () => {
     return (
@@ -15,7 +16,7 @@ const Downline = () => {
                             <div className='p-4 rounded-md w-4/5 mx-auto bg-white'>
                                 <div className="space-y-3 w-4/5 mx-auto">
                                     <div className='flex items-center justify-center space-y-3 flex-col'>
-                                        <img src="/images/dashboard.png" className='object-cover' />
+                                        <Image alt="" src="/images/dashboard.png" className='object-cover' />
                                         <div className="">
                                             <button className='bg-[#E51B48] text-white py-2 px-3 rounded-md'>Edit Profile</button>
                                         </div>

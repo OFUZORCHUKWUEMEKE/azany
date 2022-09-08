@@ -39,7 +39,7 @@ export default function KycModal({ open, handleClose, handleOpen, image ,setUplo
                         </Typography>
                         <div className='p-2 border border-dotted border-[#E51B48] mt-2'>
                             <div className="py-2">
-                                <img src={image ? URL.createObjectURL(image) : ''} alt="images" className="h-44 w-[95%] mx-auto object-cover" />
+                                <Image src={image ? URL.createObjectURL(image) : ''} alt="images" className="h-44 w-[95%] mx-auto object-cover" />
                             </div>
                         </div>
                         <div className='space-y-3 py-3'>

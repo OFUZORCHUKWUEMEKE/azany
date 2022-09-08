@@ -3,6 +3,7 @@ import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu';
 import { IconButton } from '@mui/material';
 import TemporaryDrawer from './drawer';
+import Image from 'next/image';
 
 const Hero = () => {
     const [state, setState] = React.useState({
@@ -44,7 +45,7 @@ const Hero = () => {
                 <p className='text-center text-gray-500 mt-2'>Manage multiple affiliate programs, track affiliate partner performance, assign commissions and issue payouts on one</p>
                 <div className='flex justify-end w-full mt-6'>
                     <div className="flex justify-center  w-4/5  items-end bg-gray-200 rounded-l-[50px]">
-                        <img src="/images/azany.png" className="md:w-[50%] w-full" />
+                        <Image alt="" src="/images/azany.png" className="md:w-[50%] w-full" />
                     </div>
                 </div>
             </div>

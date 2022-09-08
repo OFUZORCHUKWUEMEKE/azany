@@ -4,6 +4,7 @@ import Layout from '../../components/Layout'
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import { IconButton } from '@mui/material';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Downlines = () => {
     return (
@@ -21,9 +22,9 @@ const Downlines = () => {
                         </div>
                         {downlines && (
                             downlines.map((downline) => (
-                                <div className='flex py-4 mt-3 w-full mx-auto items-center justify-between'>
+                                <div key={downline.time} className='flex py-4 mt-3 w-full mx-auto items-center justify-between'>
                                     <div className='flex items-center space-x-3'>
-                                        <img src={downline.images} />
+                                        <Image alt="" src={downline.images} />
                                         <h2>{downline.name}</h2>
                                     </div>
                                     <div>
