@@ -5,6 +5,7 @@ import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LogoutIcon from '@mui/icons-material/Logout';
 import Link from 'next/link';
+import Image from 'next/image';
 const Sidebar = () => {
    return (
       <>

@@ -20,7 +20,7 @@ const Profile = () => {
             <div className='p-2 rounded-md w-4/5 mx-auto bg-white'>
               <div className="space-y-3 w-4/5 mx-auto">
                 <div className='flex items-start space-y-3 justify-start flex-col'>
-                  <img src="/images/dashboard.png" className='object-cover' />
+                  <Image alt="" src="/images/dashboard.png" className='object-cover' />
                   <div className="">
                     <button className='bg-[#E51B48] text-white py-2 px-3 rounded-md'>Edit Profile</button>
                   </div>
